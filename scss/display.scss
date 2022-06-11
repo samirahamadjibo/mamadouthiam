@@ -1,0 +1,107 @@
+.display-md-none{
+  display: block !important;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){display: none !important};
+}
+
+.scrolling-text-container{
+  display: flex;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.scrolling-text{
+  white-space: nowrap;
+  animation: scrolling-text 7s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-headings;
+  font-size: 50px;
+}
+.scrolling-text.small{
+  animation: scrolling-text 14s linear infinite;
+}
+.scrolling-text-container.competences{
+  width: 100%;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){width: 80%;};
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+
+@keyframes scrolling-text {
+  0%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(-100%,0);
+  }
+}
+
+.pastille-mini{
+  display: inline-block;
+  border-radius: 50px;
+  background-color: $theme-orange;
+  width: 10px;
+  height: 10px;
+  margin: 0 50px;
+}
+
+.carded{
+  border-radius: 20px;
+  padding: 20px 70px;
+  background-color: white;
+  color: black;
+}
+.carded.home{
+  width: 100%;
+  @media(min-width: map-get($map: $grid-breakpoints, $key: sm)){width: 75%;};
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){font-size: 0.8 * $font-size-base};
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){padding: 20px 20px;};
+}
+.carded.projects{
+  padding: 70px 44px;
+  margin: 0 20px
+}
+
+.carded.experiences{
+  padding: 70px 44px;
+}
+
+.carded.contact {
+  padding: 20px 30px;
+}
+.carded.regular{
+  max-width: 300px;
+}
+.carded.big{
+  max-width: 475px;
+}
+.profile-img{
+  width: 500px;
+  z-index: 2;
+}
+
+
+.width-max{
+  width: 100%;
+}
+.height-max{
+  height: 100%;
+}
+
+.scribble-decorator{
+  height: 98px;
+  background-image: url("../src/assets/images/scribble_white.png");
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.bg-lego{
+  background-image: url("../src/assets/images/lego_bg.png");
+  background-size: cover;
+  color: white;
+  border: 2px solid white !important
+}

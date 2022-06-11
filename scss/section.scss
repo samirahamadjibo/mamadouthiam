@@ -1,0 +1,23 @@
+.home-section{
+  background-color: #EFEFEF;
+  color: black;
+}
+
+nav{
+  background-image: url("../src/assets/images/scribble.png");
+  background-repeat: repeat;
+}
+
+.nav-row{
+  height: 15vh;
+}
+.scrolling-text-row{
+  height: 15vh;
+}
+.home-row{
+}
+.page-section{
+  background-color: black;
+  color:white;
+  z-index: 2;
+}

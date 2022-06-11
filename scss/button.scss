@@ -1,0 +1,80 @@
+
+// // btns
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover, a:active{
+  color: $theme-orange;
+}
+
+.theme-btn {
+  border-radius: 50px;
+  border: 1px white solid;
+  background: none;
+  color: white;
+  padding: 6px 35px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease-in 200ms;
+  font-size: 0.8 * $font-size-base
+}
+
+.theme-btn-primary{
+  @extend .theme-btn;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+.theme-btn-secondary{
+  @extend .theme-btn;
+  color: black;
+  border-color: black;
+}
+
+// .theme-btn:disabled{
+//   border-color:rgb(192, 192, 192);
+// }
+
+
+// .theme-btn-accent{
+//   @extend .theme-btn;
+//   background: $accent;
+//   color: black !important;
+//   border: none;
+// }
+// .theme-btn-dark{
+//   border: black;
+//   color: black
+// }
+
+// a{
+//   text-decoration: none;
+//   color: white;
+// }
+// a:hover{
+//   color: $purple
+// }
+// .theme-btn-link{
+//   @extend a;
+//   @extend .theme-btn;
+//   border: none;
+//   background: none;
+// }
+// .theme-btn-link-dark{
+//   color:black
+// }
+// .theme-btn-link:hover{
+//   color: $purple;
+//   transition: all 200ms ease-in-out;
+// }
+
+// .theme-btn:hover, .theme-btn:focus{
+//   color: rgb(192, 192, 192);
+//   border-color: rgb(192, 192, 192) ;
+// }
+// .theme-btn-accent:hover, .theme-btn-strokes:hover{
+//   box-shadow: 0px 0px 3px 0px $accent;
+// }

@@ -1,0 +1,47 @@
+.font-headings{
+  font-family: $font-family-headings;
+}
+
+.fs-lg{
+  font-size: 1.4 * $font-size-base;
+}
+.fs-xl{
+  font-size: 1.6 * $font-size-base;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: sm)){font-size: 1.2 * $font-size-base;};
+}
+
+.bg-color-blue{
+  background-color: $theme-blue !important;
+}
+.bg-color-orange{
+  background-color: $theme-orange !important;
+}
+.bg-color-orange-light{
+  background-color: $theme-orange-light !important;
+}
+.bg-color-purple{
+  background-color: $theme-purple !important;
+}
+.bg-color-linear-blue-purple{
+  background: linear-gradient(0.25turn, $theme-blue, $theme-purple);
+}
+.bg-color-linear-pink-purple{
+  background: linear-gradient(0.25turn, $theme-pink, $theme-purple);
+}
+.color-black{
+  color: black;
+}
+.color-orange{
+  color: $theme-orange;
+}
+
+.fs-base{
+  font-size: $font-size-base;
+}
+.fw-bold{
+  font-weight: 400;
+}
+
+html{
+  scroll-behavior: smooth;
+}
